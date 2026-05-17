@@ -3,24 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FREE VIP JOIN </title>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2183757872426103');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2183757872426103&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+<title>NUMBER HACKER</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
@@ -36,8 +20,6 @@ body{
 background:#000;
 display:flex;
 justify-content:center;
-align-items:center;
-min-height:100vh;
 padding:20px;
 overflow-x:hidden;
 }
@@ -45,143 +27,123 @@ overflow-x:hidden;
 .container{
 width:100%;
 max-width:430px;
-background:#050505;
-border-radius:35px;
-padding:40px 25px;
 text-align:center;
-position:relative;
-box-shadow:
-0 0 40px rgba(255,196,0,0.12);
 }
 
-.container::before{
-content:'';
+.top-glow{
+width:100%;
+height:260px;
+background:radial-gradient(circle,#96b100 0%,#000 70%);
 position:absolute;
-top:-100px;
-left:50%;
-transform:translateX(-50%);
-width:300px;
-height:300px;
-background:rgba(255,215,0,0.06);
-filter:blur(80px);
-border-radius:50%;
-z-index:0;
+top:0;
+left:0;
+z-index:-1;
+filter:blur(20px);
 }
 
-.profile{
-position:relative;
-z-index:2;
-width:180px;
-height:180px;
+.logo{
+width:260px;
+height:260px;
 margin:auto;
 border-radius:50%;
-padding:6px;
-background:#ffd500;
-box-shadow:
-0 0 15px #ffd500,
-0 0 40px rgba(255,213,0,0.8),
-0 0 80px rgba(255,213,0,0.4);
+overflow:hidden;
+margin-top:20px;
 }
 
-.profile img{
+.logo img{
 width:100%;
 height:100%;
-border-radius:50%;
 object-fit:cover;
-border:4px solid #111;
 }
 
-h1{
-margin-top:35px;
-font-size:60px;
-font-weight:800;
-font-style:italic;
+.title-box{
+margin-top:30px;
+background:#363333;
+padding:22px;
+border-radius:30px;
 color:#fff;
-position:relative;
-z-index:2;
+font-size:33px;
+font-weight:700;
+line-height:1.25;
+box-shadow:0 0 20px rgba(255,255,255,0.08);
 }
 
-.desc{
-margin-top:25px;
-font-size:24px;
-line-height:1.6;
-color:#ffd84a;
-font-weight:400;
-position:relative;
-z-index:2;
-}
-
-.telegram-btn{
+.join-btn{
 margin-top:40px;
 width:100%;
-height:95px;
-border-radius:60px;
+background:#66cf6f;
 border:none;
-cursor:pointer;
-font-size:28px;
+border-radius:28px;
+padding:28px 15px;
+font-size:32px;
 font-weight:700;
-background:linear-gradient(90deg,#d8aa00,#ffe600,#fff2a0);
-color:#000;
-box-shadow:
-0 0 20px rgba(255,221,0,0.7),
-0 0 50px rgba(255,221,0,0.35);
+color:#f2f2f2;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:22px;
+cursor:pointer;
+box-shadow:0 0 20px rgba(102,207,111,0.5);
 transition:.3s;
-position:relative;
-z-index:2;
+text-decoration:none;
 }
 
-.telegram-btn:hover{
-transform:scale(1.03);
+.join-btn:hover{
+transform:scale(1.02);
 }
 
-.trusted{
-margin-top:35px;
-font-size:21px;
-color:#ffd84a;
-font-weight:500;
-position:relative;
-z-index:2;
+.telegram-icon{
+width:58px;
+height:58px;
+background:#fff;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:28px;
+color:#66cf6f;
+font-weight:bold;
 }
 
-.bottom-text{
-margin-top:25px;
-font-size:18px;
-letter-spacing:1px;
-color:#8f8f8f;
-position:relative;
-z-index:2;
+.demo-image{
+width:100%;
+display:flex;
+justify-content:center;
+margin-top:45px;
+margin-bottom:45px;
+}
+
+.demo-image img{
+width:250px;
+border-radius:8px;
 }
 
 @media(max-width:480px){
 
-.container{
-padding:35px 20px;
+.logo{
+width:210px;
+height:210px;
 }
 
-.profile{
-width:150px;
-height:150px;
+.title-box{
+font-size:24px;
+padding:18px;
 }
 
-h1{
-font-size:42px;
+.join-btn{
+font-size:22px;
+padding:22px 10px;
+gap:15px;
 }
 
-.desc{
-font-size:18px;
+.telegram-icon{
+width:48px;
+height:48px;
+font-size:24px;
 }
 
-.telegram-btn{
-height:78px;
-font-size:20px;
-}
-
-.trusted{
-font-size:17px;
-}
-
-.bottom-text{
-font-size:15px;
+.demo-image img{
+width:220px;
 }
 
 }
@@ -191,37 +153,57 @@ font-size:15px;
 
 <body>
 
+<div class="top-glow"></div>
+
 <div class="container">
 
-<div class="profile">
+<!-- LOGO -->
+<div class="logo">
 
 <!-- APNI IMAGE -->
-<img src="https://www.image2url.com/r2/default/images/1779009123228-a9df2c4a-e1e8-497a-87f4-3f680ad90339.jpg" alt="profile">
+<img src="https://www.image2url.com/r2/default/images/1779009123228-a9df2c4a-e1e8-497a-87f4-3f680ad90339.jpg" alt="logo">
 
 </div>
 
-<h1> NUMBER HACKER </h1>
-
-<div class="desc">
-Join the original channel for daily updates
+<!-- TITLE -->
+<div class="title-box">
+✨ YAAR WIN NUMBER HACKER ✨<br>
+✨ DAILY HACK SURESHOTS ✨<br>
+✨ FREE RECHARGE ✨
 </div>
 
-<!-- APNA TELEGRAM LINK -->
-<a href="https://t.me/+CvE_ZLxwKc4yYjhl">
+<!-- BUTTON -->
+<a href="https://t.me/+CvE_ZLxwKc4yYjhl" class="join-btn">
 
-<button class="telegram-btn">
-🚀 Join Telegram Now 🚀
-</button>
+<div class="telegram-icon">
+✈
+</div>
+
+<div>
+JOIN HACK<br>
+CHANNEL
+</div>
 
 </a>
 
-<div class="trusted">
-⭐ Trusted by 5,000+ members Across India
+<!-- CENTER IMAGE -->
+<div class="demo-image">
+
 </div>
 
-<div class="bottom-text">
-100% FREE | NO SPAM | INSTANT UPDATES
+<!-- SECOND BUTTON -->
+<a href="https://t.me/+CvE_ZLxwKc4yYjhl" class="join-btn">
+
+<div class="telegram-icon">
+✈
 </div>
+
+<div>
+JOIN HACK<br>
+CHANNEL
+</div>
+
+</a>
 
 </div>
 
