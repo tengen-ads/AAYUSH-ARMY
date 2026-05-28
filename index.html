@@ -1,272 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>VIP PANAL</title>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1499963798348864');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1499963798348864&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIP GROUP </title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  
 <style>
-:root{
-  --panel:#071e1d;
-  --teal1:#0ef2d5;
-  --teal2:#13f2ff;
-  --btn-text:#001818;
-  --muted:rgba(255,255,255,0.75);
-  --label-red:#ff2f5a;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
 }
 
 body{
-  margin:0;
-  font-family:'Poppins',sans-serif;
-  background:linear-gradient(180deg,#061214,#081617,#071013);
-  color:#fff;
-  overflow-x:hidden;
+background:radial-gradient(circle,#0f1030,#02030d);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:12px;
 }
 
-/* CENTER WRAPPER */
-.center-wrap{
-  display:flex;
-  justify-content:center;
-  padding:40px 0;
+.card{
+width:390px;
+max-width:100%;
+background:linear-gradient(180deg,#111327,#171739);
+border-radius:34px;
+padding:32px 24px 38px;
+text-align:center;
+box-shadow:0 0 40px rgba(0,0,0,.45);
 }
 
-/* MAIN CARD */
-.wrap{
-  max-width:400px;
-  width:80%;
-  background:var(--panel);
-  border-radius:20px;
-  padding:22px 20px 30px;
-  text-align:center;
-  position:relative;
-
-  box-shadow:
-    0 0 0 1px rgba(14,242,213,0.35),
-    0 0 20px rgba(14,242,213,0.25),
-    0 0 40px rgba(19,242,255,0.15),
-    0 25px 45px rgba(0,0,0,0.7);
-
-  animation: edgeGlow 3s ease-in-out infinite alternate;
+.profile{
+width:126px;
+height:126px;
+border-radius:50%;
+overflow:hidden;
+margin:auto;
+border:4px solid #00ff8a;
+box-shadow:0 0 25px rgba(0,255,138,.8);
 }
 
-@keyframes edgeGlow{
-  from{
-    box-shadow:
-      0 0 0 1px rgba(67, 242, 14, 0.25),
-      0 0 16px rgba(14, 242, 37, 0.18),
-      0 0 32px rgba(19,242,255,0.1),
-      0 25px 45px rgba(0,0,0,0.7);
-  }
-  to{
-    box-shadow:
-      0 0 0 1px rgba(14, 242, 41, 0.45),
-      0 0 28px rgba(14,242,213,0.35),
-      0 0 55px rgba(19,242,255,0.22),
-      0 25px 45px rgba(0,0,0,0.7);
-  }
+.profile img{
+width:100%;
+height:100%;
+object-fit:cover;
 }
 
-.marquee{
-  background:linear-gradient(90deg,var(--teal1),var(--teal2));
-  color:var(--btn-text);
-  font-weight:900;
-  padding:10px 0;
-  border-radius:12px;
-  margin-bottom:12px;
-  font-size:15px;
-  letter-spacing:1px;
+.title{
+margin-top:28px;
+font-size:28px;
+font-weight:800;
+color:#ffb100;
+letter-spacing:-1px;
 }
 
-.profile-box{
-  width:180px;
-  height:180px;
-  margin:12px auto 18px;
-  border-radius:18px;
-  overflow:hidden;
-  border:4px solid rgba(14,242,213,0.25);
-}
-.profile-box img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-
-h1{
-  font-size:28px;
-  margin:6px 0;
-  font-weight:800;
-}
 .subtitle{
-  font-size:14px;
-  color:var(--muted);
-  margin-bottom:18px;
+margin-top:16px;
+font-size:15px;
+font-weight:400;
+line-height:1.55;
+color:#f2f2f2;
 }
 
-.pill{
-  display:block;
-  width:100%;
-  padding:18px 0;
-  margin:14px 0;
-  border-radius:50px;
-  background:linear-gradient(90deg,var(--teal1),var(--teal2));
-  color:var(--btn-text);
-  font-weight:900;
-  font-size:18px;
-  text-decoration:none;
-  letter-spacing:1px;
-}
-.pill-sub{
-  font-size:12px;
-  color:var(--muted);
-}
-
-.hurry{
-  color:var(--teal1);
-  font-weight:800;
-  margin-top:6px;
+.green{
+color:#00f878;
+font-weight:700;
 }
 
 .timer{
-  display:flex;
-  justify-content:center;
-  gap:15px;
-  margin:16px 0 20px;
-}
-.cell{
-  background:rgba(1,40,38,0.6);
-  padding:12px 16px;
-  border-radius:10px;
-  width:70px;
-}
-.num{
-  font-size:28px;
-  font-weight:800;
-}
-.lab{
-  font-size:12px;
-  color:var(--label-red);
-  margin-top:4px;
-  font-weight:700;
+margin-top:28px;
+height:98px;
+border:1px solid rgba(0,255,138,.35);
+border-radius:20px;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:8px;
+font-size:16px;
+font-weight:600;
+color:white;
 }
 
-.features{margin-bottom:18px;}
-.feature-item{
-  margin:6px 0;
-  font-weight:700;
-  color:var(--muted);
+.timer span{
+font-size:38px;
+font-weight:800;
+color:#ffb100;
 }
 
-.divider{
-  height:1px;
-  background:rgba(255,255,255,0.05);
-  margin:20px auto;
+.btn{
+margin-top:28px;
+background:#f9a400;
+height:92px;
+border-radius:22px;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:10px;
+font-size:20px;
+font-weight:800;
+color:black;
+text-decoration:none;
+box-shadow:0 8px 0 #cb7400,0 0 30px rgba(255,165,0,.35);
 }
 
-.exp h2{font-size:20px;}
-.big{
-  color:var(--teal1);
-  font-weight:800;
-}
-.mini{
-  font-size:12px;
-  opacity:0.6;
-  letter-spacing:2px;
+.footer{
+margin-top:28px;
+font-size:14px;
+font-weight:400;
+line-height:1.7;
+color:#d9d9d9;
 }
 
-/* CONTACT SECTION */
-.contact-section{
-  text-align:center;
-  padding:30px 20px;
-  background:#071e1d;
-  max-width:400px;
-  margin:30px auto 50px;
-  border-radius:15px;
-  box-shadow:0 0 15px rgba(14,242,213,0.2);
+.copy{
+margin-top:28px;
+font-size:11px;
+letter-spacing:2px;
+opacity:.55;
+color:#ddd;
 }
-
-.contact-btn{
-  background:linear-gradient(90deg,#0ef2d5,#13f2ff);
-  color:#001818;
-  padding:10px 18px;
-  text-decoration:none;
-  border-radius:30px;
-  font-weight:800;
-  font-size:14px;
-  display:inline-block;
-}
-
 </style>
-
-<script>
-let m=30,s=0;
-setInterval(()=>{
-  document.getElementById("min").innerText=String(m).padStart(2,'0');
-  document.getElementById("sec").innerText=String(s).padStart(2,'0');
-  if(s===0){ if(m===0)return; m--; s=59; } else s--;
-},1000);
-</script>
 </head>
 
 <body>
 
-<div class="center-wrap">
-  <div class="wrap">
+<div class="card">
 
-    <div class="marquee">
-      <marquee scrollamount="4">🔥 FREE VIP SURESHOT • LIMITED TIME • JOIN FAST 🔥</marquee>
-    </div>
-
-    <div class="profile-box">
-      <img src="https://www.image2url.com/r2/default/images/1779009123228-a9df2c4a-e1e8-497a-87f4-3f680ad90339.jpg">
-    </div>
-
-    <h1>𝙉𝙐𝙈𝘽𝙀𝙍 𝙃𝘼𝘾𝙆𝙀𝙍 ☠️</h1>
-    <div class="subtitle">JOIN FAST FOR FREE SURESHOT VIP HACKS</div>
-
-    <a class="pill" href="https://t.me/+WaWQmU6jmo1mZThl" >𝐉𝐎𝐈𝐍 𝐇𝐀𝐂𝐊 𝐂𝐇𝐀𝐍𝐍𝐄𝐋</a>
-    <div class="pill-sub">FREE VIP HACKS</div>
-
-    <div class="hurry">HURRY UP! JOIN NOW</div>
-
-    <div class="timer">
-      <div class="cell"><div class="num" id="min">30</div><div class="lab">MIN</div></div>
-      <div class="cell"><div class="num" id="sec">00</div><div class="lab">SEC</div></div>
-    </div>
-
-    <div class="features">
-      <div class="feature-item">⭐ 100% WINNING SURESHOT</div>
-      <div class="feature-item">⭐ 100% LOSS RECOVERY</div>
-      <div class="feature-item">⭐ MONTHLY INCOME 30K–50K</div>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="exp">
-      <h2>5+ YEARS EXPERIENCE</h2>
-      <div class="big">10 LAKH+ WINNING</div>
-      <div class="mini">ADS SET BY @TENGENADS</div>
-    </div>
-
-  </div>
+<div class="profile">
+<img src="https://www.image2url.com/r2/default/images/1779364469260-5550d4a0-a00c-4ea8-88d8-b5718995bdcd.png">
 </div>
+
+<div class="title">𝙉𝙐𝙈𝘽𝙀𝙍 𝙃𝘼𝘾𝙆𝙀𝙍 ☠️</div>
+
+<div class="subtitle">
+Join the Fast Growing Community<br>
+Get <span class="green">Regular Updates & Insights 🔥</span>
+</div>
+
+<div class="timer">
+⚡ Free access closes in <span id="count">9</span> s
+</div>
+
+<a class="btn" href="https://t.me/+C0O40Ok16D03NTZl">
+🚀 JOIN TELEGRAM NOW
+</a>
+
+<div class="footer">
+✅ Trusted by Thousands of Members<br>
+🔒 For Educational Purpose Only
+</div>
+
+<div class="copy">
+@TENGENADSAGENCY BY TG 
+</div>
+
+</div>
+
+<script>
+let x=9;
+setInterval(()=>{
+if(x>0){
+x--;
+document.getElementById('count').innerHTML=x;
+}
+},1000)
+</script>
 
 </body>
 </html>
